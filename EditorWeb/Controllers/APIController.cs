@@ -13,9 +13,13 @@ using Microsoft.AspNetCore.Http;
 namespace EditorWeb.Controllers {
     public class APIController : Controller {
 
-        public Boolean Login(String nombre, String contraseña) {
+        public IActionResult Login(String nombre, String contraseña) {
             Usuario u = new Usuario(nombre, contraseña);
-            return UsuariosDAO.validarUsuario(u);
+            var ret = false;
+            if (UsuariosDAO.validarUsuario(u)) {
+                ret = true;
+            }
+            return Json(JsonConvert.SerializeObject(ret));
         }
 
 

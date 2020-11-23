@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Registro";
+}
+
+<div>
+
+    @if (ViewBag.msg != null) {
+        <p><b>@ViewBag.msg</b></p>
+    }
+
+    <form asp-controller="Usuario" asp-action="registrarUsuario" method="post">
+
+        <div class="form-group registro">
+            <label for="nombre">Usuario</label>
+            <input type="text" class="form-control" name="nombre" id="usuario" placeholder="Ingrese su Usuario">
+        </div>
+
+        <div class="form-group">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="********">
+        </div>
+
+        <div class="form-group">
+            <label for="clave">Clave</label>
+            <input type="text" class="form-control" name="clave" id="clave" placeholder="AAAA-BBBB-1234-5678">
+        </div>
+
+        <button type="submit" class="btn-primary">Registrarme</button>
+    </form>
+</div>

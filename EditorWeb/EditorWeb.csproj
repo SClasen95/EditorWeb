@@ -5,6 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\NewFolder\**" />
+    <Content Remove="Models\NewFolder\**" />
+    <EmbeddedResource Remove="Models\NewFolder\**" />
+    <None Remove="Models\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\prevCF.png" />
+    <None Include="wwwroot\assets\prevCR.png" />
+    <None Include="wwwroot\assets\prevEA.png" />
+    <None Include="wwwroot\assets\prevEI.png" />
+    <None Include="wwwroot\assets\prevMain.png" />
+    <None Include="wwwroot\assets\prevMainLoaded.png" />
+    <None Include="wwwroot\assets\prevRA.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.22" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>

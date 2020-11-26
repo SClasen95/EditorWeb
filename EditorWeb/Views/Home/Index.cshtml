@@ -4,20 +4,39 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Bienvenido Internauta!!!</h1>
+    <h1 class="display-4 textoBlanco">Bienvenido</h1>
+     <br/>
+     <p class="textoBlanco">Esta es una vista previa del menu principal de la aplicacion</p>
+    <img class="imgMain" src="/assets/prevMainLoaded.png"/>
+    <br />
+    <ul align="center">
+        <li>
+            <img class="imgLista" src="/assets/prevCF.png" />
+            <p style="display: block" class="textoBlanco">Esta funcionalidad permite cambiar el formato de tu video a cualquier formato deseado</p>
+        </li>
+        <li>
+            <img class="imgLista" src="/assets/prevCR.png" />
+            <p class="textoBlanco">Esta funcionalidad permite cambiar la resolucion de tu video a una resolucion dentro de una lista de opciones</p>
+        </li>
+        <li>
+            <img class="imgLista" src="/assets/prevEA.png" />
+            <p class="textoBlanco">Esta funcionalidad permite extraer el audio de un video en formato mp3</p>
+        </li>
+        <li>
+            <img class="imgLista" src="/assets/prevEI.png" />
+            <p class="textoBlanco">Esta funcionalidad permite extraer una imagen en formato png de cada tantas imagenes de tu video</p>
+        </li>
+        <li>
+            <img class="imgLista" src="/assets/prevRA.png" />
+            <p class="textoBlanco">Esta funcionalidad permite remover el audio del video, devolviendo un video sin sonido</p>
+        </li>
+    </ul>
 
-
-
-
-
-
-
-
-
-
+    
 
 
     @if(ViewBag.usuario!=null) {
+        <br />
         <a href="https://github.com/SClasen95/VideoEdit/archive/main.zip" target="_blank">¡¡¡Hace click aca para descargar la aplicacion!!!</a>
     }
 </div>

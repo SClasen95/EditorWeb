@@ -15,6 +15,7 @@ namespace EditorWeb.Controllers
         [HttpPost]
         public IActionResult registrarUsuario(String nombre, String contraseña, String clave)
         {
+            var camposObligatorios = nombre != null && contraseña != null && clave != null;
             Usuario u = new Usuario(nombre, contraseña, clave);
             if (!UsuariosDAO.existeUsuario(u) && UsuariosDAO.keyValida(clave)) {
                 UsuariosDAO.agregarUsuario(u);
